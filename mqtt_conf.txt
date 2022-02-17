@@ -19,8 +19,12 @@ persistence_location /mosquitto/data
 #see log file to see why it not work
 log_dest file /mosquitto/log/mosquitto.log
 
-#cant login not need username and password
-allow_anonymous true
+#cant login not need username and password 
+#allow_anonymous ture
+#or
+#use password file to set up user name and password
+allow_anonymous false
+password_file /mosquitto/config/pwfile
 
 #mqtt port
 listener 1883
