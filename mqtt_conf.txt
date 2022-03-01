@@ -1,4 +1,5 @@
-#####################setup_docker-compose ##########
+#==set mqtt docker in local pc not in docker foler===
+#=================docker-compose.yml=================
   MQTT:
     image: eclipse-mosquitto
     ports:
@@ -11,18 +12,6 @@
       - /home/xuchen/Desktop/sanoh_Surface_Defect_Detection/MQTT_conf/mosquitto-data:/mosquitto/data
       - /home/xuchen/Desktop/sanoh_Surface_Defect_Detection/MQTT_conf/mosquitto-log:/mosquitto/log
       - /home/xuchen/Desktop/sanoh_Surface_Defect_Detection/MQTT_conf/mosquitto-conf:/mosquitto/config
-#==set mqtt docker in local pc not in docker foler===
-#=================docker-compose.yml=================
-  mosquitto:
-    image: eclipse-mosquitto
-    ports:
-      - 1883:1883
-      - 8883:8883
-    volumes:
-      - /srv/mqtt/data:/mosquitto/data
-      - /srv/mqtt/log:/mosquitto/log
-      - /srv/mqtt/config:/mosquitto/config
-
 #==============set conf folder=======================
 #==============mosquitto.conf========================
 #is not set up will go out the mqtt
