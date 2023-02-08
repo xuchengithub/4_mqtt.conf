@@ -9,9 +9,9 @@
       - "1883"
       - "9001"
     volumes:
-      - /home/xuchen/Desktop/sanoh_Surface_Defect_Detection/MQTT_conf/mosquitto-data:/mosquitto/data
-      - /home/xuchen/Desktop/sanoh_Surface_Defect_Detection/MQTT_conf/mosquitto-log:/mosquitto/log
-      - /home/xuchen/Desktop/sanoh_Surface_Defect_Detection/MQTT_conf/mosquitto-conf:/mosquitto/config
+      - /home/xuchen/Desktop//MQTT_conf/mosquitto-data:/mosquitto/data
+      - /home/xuchen/Desktop//MQTT_conf/mosquitto-log:/mosquitto/log
+      - /home/xuchen/Desktop//MQTT_conf/mosquitto-conf:/mosquitto/config
 #==============set conf folder=======================
 #==============mosquitto.conf========================
 #is not set up will go out the mqtt
